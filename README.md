@@ -1,6 +1,6 @@
 # DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding
 This repo is the official dataset and Pytorch implementation of [DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding](https://arxiv.org/abs/2312.16023) [AAAI2024].
-
+Maintaining - We will complete the repo within a week.
 ## Introducing DocMSU
 ## DocMSU Dataset
 Please download the dataset from [here](https://drive.google.com/drive/folders/1g4jI9ZVGtNd3pXm7y7cZkimDur5u50Fq?usp=sharing). There are two files: `img.zip`, `anno.zip`(Images and annotation files).  
