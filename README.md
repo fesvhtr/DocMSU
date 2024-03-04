@@ -1,6 +1,19 @@
 # DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding
 This repo is the official dataset and Pytorch implementation of [DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding](https://arxiv.org/abs/2312.16023) [AAAI2024].
 
-### Introducing DocMSU
-### DocMSU Dataset
-### Get Started
+## Introducing DocMSU
+## DocMSU Dataset
+Please download the dataset from [here](). There are two files: `img.zip`, `anno.zip`: Images and annotation files.
+Put them into ./DocMSU/data/release/ and unzip all.
+## Get Started
+```
+git clone https://github.com/fesvhtr/DocMSU.git
+cd DocMSU
+conda create -n docmsu python=3.8
+pip install -r requirements.txt
+conda activate docmsu
+```
+## Checkpoints
+Download checkpoint for swin-transformer [here]().
+Download recommended checkpoint for DocMSU [here]().
+
