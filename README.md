@@ -1,2 +1,2 @@
-# DocMSU
-[AAAI 2024] Official repository of the paper "DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding"
+# DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding
+This repo is the official dataset and Pytorch implementation of [DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding](https://arxiv.org/abs/2312.16023) [AAAI2024].
