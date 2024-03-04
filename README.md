@@ -3,7 +3,7 @@ This repo is the official dataset and Pytorch implementation of [DocMSU: A Compr
 
 ## Introducing DocMSU
 ## DocMSU Dataset
-Please download the dataset from [here](). There are two files: `img.zip`, `anno.zip`: Images and annotation files.
+Please download the dataset from [here](). There are two files: `img.zip`, `anno.zip`: Images and annotation files.  
 Put them into ./DocMSU/data/release/ and unzip all.
 ## Get Started
 ```
