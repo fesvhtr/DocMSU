@@ -14,7 +14,7 @@ pip install -r requirements.txt
 conda activate docmsu
 ```
 ## Checkpoints
-Download checkpoint for swin-transformer [here]().
+Download checkpoint for swin-transformer [here]().  
 Download recommended checkpoint for DocMSU [here]().
 ## Cite
 ```
