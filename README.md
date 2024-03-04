@@ -1,4 +1,5 @@
 # DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding
+Hang Du, Guoshun Nan, Sicheng Zhang, Binzhu Xie, Junrui Xu, Hehe Fan, Qimei Cui, Xiaofeng Tao, Xudong Jiang
 This repo is the official dataset and Pytorch implementation of [DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding](https://arxiv.org/abs/2312.16023) [AAAI2024].
 
 ## Introducing DocMSU
