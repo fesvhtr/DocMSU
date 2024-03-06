@@ -26,4 +26,3 @@ Download recommended checkpoint for DocMSU [here]().
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
-```

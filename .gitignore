@@ -1,0 +1,8 @@
+weights/
+deprecated/
+data_emnlp/
+data/img
+data/img_label
+data/release/*
+data/text_data
+__pycache__/
