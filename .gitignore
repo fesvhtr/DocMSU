@@ -6,3 +6,4 @@ data/release/*
 !data/release/data.md
 data/text_data
 __pycache__/
+tmp.py
