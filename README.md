@@ -13,9 +13,10 @@ conda create -n docmsu python=3.8
 pip install -r requirements.txt
 conda activate docmsu
 ```
+`./run.sh` to train and evaluate the model.
 ## Checkpoints
 Download checkpoint `swin_base_patch4_window7_224.pth` `swin_small_patch4_window7_224.pth` `swin_tiny_patch4_window7_224.pth` for swin-transformer [here](https://github.com/microsoft/Swin-Transformer).  
-Download recommended `textmodel_8.pth` `visualmodel_8.pth` checkpoint for DocMSU [here]().
+Download recommended `textmodel_8.pth` `visualmodel_8.pth` checkpoint for DocMSU [here](https://drive.google.com/drive/folders/14wJpFtwDyH3xm23OASGTvQSlFbnPcfA8?usp=sharing).
 ## Cite
 ```
 @misc{du2023docmsu,

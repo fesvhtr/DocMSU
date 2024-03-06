@@ -1,0 +1,11 @@
+jsonlines
+opencv-python
+torch
+torchvision
+transformers
+scikit-learn
+Pillow
+tqdm
+numpy
+typing
+
