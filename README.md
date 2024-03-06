@@ -14,8 +14,8 @@ pip install -r requirements.txt
 conda activate docmsu
 ```
 ## Checkpoints
-Download checkpoint for swin-transformer [here]().  
-Download recommended checkpoint for DocMSU [here]().
+Download checkpoint `swin_base_patch4_window7_224.pth` `swin_small_patch4_window7_224.pth` `swin_tiny_patch4_window7_224.pth` for swin-transformer [here](https://github.com/microsoft/Swin-Transformer).  
+Download recommended `textmodel_8.pth` `visualmodel_8.pth` checkpoint for DocMSU [here]().
 ## Cite
 ```
 @misc{du2023docmsu,

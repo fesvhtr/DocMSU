@@ -1,7 +1,7 @@
 from Swin_dh_tokenlevel import swin_tiny_patch4_window7_224
 import torch.nn as nn
 import torch
-from dataLoad2 import load_data
+from data_loader import load_data
 from collections import OrderedDict
 from transformers import BertModel
 from tqdm import tqdm
@@ -9,6 +9,7 @@ from torch.optim import *
 import numpy as np
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
 import random
+import argparse
 # import wandb
 
 def setup_seed(seed):
@@ -61,20 +62,27 @@ class TextModel(nn.Module):
         output = output.reshape(-1, 96, 7, 7)
         return output
 
+def parse_args():
+    parser = argparse.ArgumentParser(description='Your description here')
+    parser.add_argument('--batch_size', type=int, default=64, help='Batch size for training')
+    parser.add_argument('--epochs', type=int, default=30, help='Number of epochs for training')
+    parser.add_argument('--img_dict_path', type=str, default='./data/release/img', help='Path to image dictionary')
+    parser.add_argument('--json_src', type=str, default='./data/release/docmsu_all.json', help='Path to JSON source file')
+    parser.add_argument('--swin_weight', type=str, default='./weights/swin_tiny_patch4_window7_224.pth',
+                        help='Path to swin-transformer pretrained weight')
+    arser.add_argument('--saved_weight', type=str, default='./weights/',
+                       help='Path of dictionary to save docmsu weights')
+    return parser.parse_args()
 
 if __name__ == '__main__':
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
-    # 数据路径
-    root_path = r"./data"
-    img_label_root_path = root_path + "/img_label"
-    text_root_path = root_path + "/text_data"
-    img_root_path = root_path + "/img"
+    args = parse_args()
 
-    batch_size, epochs = 64, 30
-    train_iter, val_iter, test_iter = load_data(img_label_root_path, text_root_path, img_root_path, batch_size)
+    train_iter, val_iter, test_iter = load_data(args.json_src, args.img_dict_path, args.batch_size)
 
     # swin-transformer预训练权重
-    weights_dict = torch.load("./weights/swin_tiny_patch4_window7_224.pth", map_location=device)["model"]
+    weights_dict = torch.load(args.swin_weight, map_location=device)["model"]
+
     new_weights_dict = OrderedDict()
     for key in weights_dict.keys():
         if "head" in key:
@@ -223,8 +231,8 @@ if __name__ == '__main__':
             str3 = f"epoch:{epoch}, accuracy:{accuracy:.4f}, precision:{precision:.4f}, recall:{recall:.4f}, f1 score:{f1_score_res:.4f}\n"
             print(str3)
 
-        torch.save(visualmodel.state_dict(), f"./weights/visualmodel_{epoch}.pth")
-        torch.save(textmodel.state_dict(), f"./weights/textmodel_{epoch}.pth")
+        torch.save(visualmodel.state_dict(), f"{args.weights_dir}/visualmodel_{epoch}.pth")
+        torch.save(textmodel.state_dict(), f"{args.weights_dir}/textmodel_{epoch}.pth")
 
 
 
