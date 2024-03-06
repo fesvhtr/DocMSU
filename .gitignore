@@ -4,5 +4,6 @@ data_emnlp/
 data/img
 data/img_label
 data/release/*
+!data/release/data.md
 data/text_data
 __pycache__/
