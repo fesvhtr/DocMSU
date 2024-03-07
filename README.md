@@ -9,7 +9,7 @@ Models created for sentence-level MSU may fail to capture sarcasm clues in docum
 To fill this gap, we present a comprehensive benchmark for Document-level Multimodal Sarcasm Understanding (DocMSU). 
 
 ### DocMSU Dataset
-A new benchmarkthat contains high-quality annotations of 102,588 pieces of news with text-image pairs in 9 hot topics.
+A new benchmarkthat contains high-quality annotations of 102,588 pieces of news with text-image pairs in 9 hot topics.  
 ![DocMSU](img/d1.png)
 ### Method
 ![DocMSU](img/d2.png)
@@ -18,7 +18,7 @@ matrix of size L^L with a padding mechanism. We rely on a simplified Resnet to o
 layer to spilt the representations of an image window into L^L patches. We add patches of each image window to the document 
 matrix to fuse the two modalities. The fused representations are fed to Swin-Transformer to patch attentions with a sliding window.
 ### Experiments
-To evaluate our model, we perform two MSU tasks, i.e., sarcasm detection and sarcasm localization.
+To evaluate our model, we perform two MSU tasks, i.e., sarcasm detection and sarcasm localization.  
 ![DocMSU](img/d3.png)
 ![DocMSU](img/d4.png)
 ## Get Started
