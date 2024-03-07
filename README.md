@@ -9,8 +9,8 @@ Models created for sentence-level MSU may fail to capture sarcasm clues in docum
 To fill this gap, we present a comprehensive benchmark for Document-level Multimodal Sarcasm Understanding (DocMSU). 
 
 ### DocMSU Dataset
+A new benchmarkthat contains high-quality annotations of 102,588 pieces of news with text-image pairs in 9 hot topics.
 ![DocMSU](img/d1.png)
-A new benchmarkthat contains high-quality annotations of 102,588 pieces of news with text-image pairs in 9 hot topics.  
 ### Method
 ![DocMSU](img/d2.png)
 We use the pre-trained BERT to generate contextualized token-level representations of the document and then form a document 
@@ -36,7 +36,9 @@ Put them into `./DocMSU/data/release/` and unzip all.
 ## Checkpoints
 Download checkpoint `swin_base_patch4_window7_224.pth` `swin_small_patch4_window7_224.pth` `swin_tiny_patch4_window7_224.pth` for swin-transformer [here](https://github.com/microsoft/Swin-Transformer).  
 Download recommended `textmodel_8.pth` `visualmodel_8.pth` checkpoint for DocMSU [here](https://drive.google.com/drive/folders/14wJpFtwDyH3xm23OASGTvQSlFbnPcfA8?usp=sharing).
-## Cite
+## Acknowledgments
+This work was partially supported by the joint funds for Regional Innovation and Development of the National Natural Science Foundation of China (No. U21A20449), the Beijing Natural Science Foundation under Grant M21037, and the Fundamental Research Funds for the Central Universities under Grant 2242022k60006.
+Please cite using this BibTeX:
 ```
 @misc{du2023docmsu,
       title={DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding}, 
@@ -46,3 +48,6 @@ Download recommended `textmodel_8.pth` `visualmodel_8.pth` checkpoint for DocMSU
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
+```
+## License
+DocMSU is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0).
