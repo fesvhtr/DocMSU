@@ -1,6 +1,5 @@
 # DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding
-This repo is the official dataset and Pytorch implementation of [DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding](https://arxiv.org/abs/2312.16023) [AAAI2024].  
-**Maintaining - We will complete the repo within a week.**
+This repo is the official dataset and Pytorch implementation of [DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding](https://arxiv.org/abs/2312.16023) [AAAI2024].
 ## DocMSU
 ### Introduction
 In document-level news, sarcasm clues are sparse or small and are often concealed in long text. 
