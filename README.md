@@ -39,13 +39,14 @@ Download recommended `textmodel_8.pth` `visualmodel_8.pth` checkpoint for DocMSU
 This work was partially supported by the joint funds for Regional Innovation and Development of the National Natural Science Foundation of China (No. U21A20449), the Beijing Natural Science Foundation under Grant M21037, and the Fundamental Research Funds for the Central Universities under Grant 2242022k60006.
 Please cite using this BibTeX:
 ```
-@misc{du2023docmsu,
-      title={DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding}, 
-      author={Hang Du and Guoshun Nan and Sicheng Zhang and Binzhu Xie and Junrui Xu and Hehe Fan and Qimei Cui and Xiaofeng Tao and Xudong Jiang},
-      year={2023},
-      eprint={2312.16023},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{du2024docmsu,
+  title={DocMSU: A Comprehensive Benchmark for Document-Level Multimodal Sarcasm Understanding},
+  author={Du, Hang and Nan, Guoshun and Zhang, Sicheng and Xie, Binzhu and Xu, Junrui and Fan, Hehe and Cui, Qimei and Tao, Xiaofeng and Jiang, Xudong},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={16},
+  pages={17933--17941},
+  year={2024}
 }
 ```
 ## License
