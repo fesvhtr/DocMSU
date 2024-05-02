@@ -1,5 +1,6 @@
 # DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding
-This repo is the official dataset and Pytorch implementation of [DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding](https://arxiv.org/abs/2312.16023) [AAAI2024].
+[![paper](https://img.shields.io/badge/cs.MM-2312.16023-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2312.16023)  
+This repo is the official dataset and Pytorch implementation of DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding [AAAI2024].
 ## DocMSU
 ### Introduction
 In document-level news, sarcasm clues are sparse or small and are often concealed in long text. 
@@ -39,14 +40,16 @@ Download recommended `textmodel_8.pth` `visualmodel_8.pth` checkpoint for DocMSU
 This work was partially supported by the joint funds for Regional Innovation and Development of the National Natural Science Foundation of China (No. U21A20449), the Beijing Natural Science Foundation under Grant M21037, and the Fundamental Research Funds for the Central Universities under Grant 2242022k60006.
 Please cite using this BibTeX:
 ```
-@misc{du2023docmsu,
-      title={DocMSU: A Comprehensive Benchmark for Document-level Multimodal Sarcasm Understanding}, 
-      author={Hang Du and Guoshun Nan and Sicheng Zhang and Binzhu Xie and Junrui Xu and Hehe Fan and Qimei Cui and Xiaofeng Tao and Xudong Jiang},
-      year={2023},
-      eprint={2312.16023},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{du2024docmsu,
+  title={DocMSU: A Comprehensive Benchmark for Document-Level Multimodal Sarcasm Understanding},
+  author={Du, Hang and Nan, Guoshun and Zhang, Sicheng and Xie, Binzhu and Xu, Junrui and Fan, Hehe and Cui, Qimei and Tao, Xiaofeng and Jiang, Xudong},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={16},
+  pages={17933--17941},
+  year={2024}
 }
 ```
 ## License
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>  
 DocMSU is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0).
